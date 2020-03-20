@@ -45,19 +45,19 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11138}
+      Script: {instanceID: 11134}
     - Class: 114
-      Script: {instanceID: 11336}
+      Script: {instanceID: 11332}
     - Class: 114
-      Script: {instanceID: 11714}
+      Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 12076}
+      Script: {instanceID: 11712}
     - Class: 114
-      Script: {instanceID: 12544}
+      Script: {instanceID: 12074}
     - Class: 114
-      Script: {instanceID: 12886}
+      Script: {instanceID: 12542}
     - Class: 114
-      Script: {instanceID: 18766}
+      Script: {instanceID: 12884}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -189,6 +189,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainButtonScript
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -495,13 +501,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainButtonScript
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/fredo/Desktop/ProyectoModular/SinAcomodoV4.apk
+  playerPath: C:/Users/fredo/Desktop/ProyectoModular/TalkToLSM6.apk
