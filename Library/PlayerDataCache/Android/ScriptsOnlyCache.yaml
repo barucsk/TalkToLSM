@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DanielLochner.Assets.SimpleSideMenu.SimpleSideMenu
     - MainButtonScript
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -23,6 +24,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -58,22 +60,28 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11134}
+      Script: {instanceID: 11136}
     - Class: 114
-      Script: {instanceID: 11332}
+      Script: {instanceID: 11294}
     - Class: 114
-      Script: {instanceID: 11480}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11712}
+      Script: {instanceID: 11484}
     - Class: 114
-      Script: {instanceID: 12074}
+      Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12078}
     - Class: 114
-      Script: {instanceID: 12846}
+      Script: {instanceID: 12548}
     - Class: 114
-      Script: {instanceID: 12884}
+      Script: {instanceID: 12852}
+    - Class: 114
+      Script: {instanceID: 12890}
+    - Class: 114
+      Script: {instanceID: 12954}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -206,7 +214,13 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 659d6ceab26f9e4237abaaf29249f293
+      Hash: 320de1d0726c1a3cab7a6a8785b0e9c2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DanielLochner.Assets.SimpleSideMenu.SimpleZoom
+    className: SimpleZoom
+  - hash:
+      serializedVersion: 2
+      Hash: 0a51b5b649fa48fd6669163d6ce13dde
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainButtonScript
@@ -516,7 +530,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 2f3c0b7bebf419c6dbbf856243844d4c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DanielLochner.Assets.SimpleSideMenu
+    className: SimpleSideMenu
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/fredo/Desktop/ProyectoModular/TalkToLSM8.apk
+  playerPath: C:/Users/fredo/Desktop/ProyectoModular/TalkToLSM16.apk
