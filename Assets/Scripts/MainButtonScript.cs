@@ -10,12 +10,13 @@ public class MainButtonScript : MonoBehaviour
     public Animator animTraductorButton;
     public GameObject soundButton;
     public GameObject traductorButton;
-
+    public GameObject panelTextTraduction;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        panelTextTraduction = GameObject.Find("PanelTW");
+        panelTextTraduction.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -51,4 +52,15 @@ public class MainButtonScript : MonoBehaviour
             animSoundButton.SetBool("DESPLEGAR", true);
         }
     }
+
+    public void showTraductorWindow()
+    {
+        panelTextTraduction.gameObject.SetActive(true);
+    }
+
+    public void cancelTraductorWindow() 
+    {
+        panelTextTraduction.gameObject.SetActive(false);
+    }
+
 }

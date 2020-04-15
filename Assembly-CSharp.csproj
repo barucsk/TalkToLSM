@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MainButtonScript.cs" />
+    <Compile Include="Assets\Scripts\input.cs" />
     <Compile Include="Assets\Simple Side-Menu\Examples\Example 1 (Clash of Clans)\Scripts\SimpleZoom.cs" />
     <Compile Include="Assets\Simple Side-Menu\Scripts\Runtime\SimpleSideMenu.cs" />
     <None Include="Assets\Simple Side-Menu\Shaders\Blur.shader" />
