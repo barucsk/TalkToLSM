@@ -1,27 +1,30 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Experimental.Networking;
+using UnityEngine.Networking;
 
 public class input : MonoBehaviour
 {
-
-    private TouchScreenKeyboard mobileKeys;
-
-    // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(GetText());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator GetText()
     {
-        
-    }
+        using (UnityWebRequest request = UnityWebRequest.Get("https://talktolsm.000webhostapp.com/"))
+        {
+            yield return request.SendWebRequest();
 
-    public void OnInputEvent()
-    {
-        mobileKeys = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false);
+            if (request.isNetworkError) // Error
+            {
+                Debug.Log(request.error);
+            }
+            else // Success
+            {
+                Debug.Log(request.downloadHandler.text);
+            }
+        }
     }
 }
