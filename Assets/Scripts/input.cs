@@ -6,24 +6,33 @@ using UnityEngine.Networking;
 
 public class input : MonoBehaviour
 {
+    string temp = ""; 
+
     void Start()
     {
-        StartCoroutine(GetText());
+        StartCoroutine(GetText2(temp));
     }
 
-    IEnumerator GetText()
+    public IEnumerator GetText2(string oracion)
     {
-        using (UnityWebRequest request = UnityWebRequest.Get("https://talktolsm.000webhostapp.com/"))
+        if (oracion != "")
         {
-            yield return request.SendWebRequest();
+            Debug.Log("hola " + oracion);
 
-            if (request.isNetworkError) // Error
+            string oracionEstructurada = "palabra = 'padres' OR palabra = 'no' OR palabra = 'comer'";
+
+            using (UnityWebRequest request = UnityWebRequest.Get("https://talktolsmex.000webhostapp.com/?palabras=" + oracionEstructurada))
             {
-                Debug.Log(request.error);
-            }
-            else // Success
-            {
-                Debug.Log(request.downloadHandler.text);
+                yield return request.SendWebRequest();
+
+                if (request.isNetworkError) // Error
+                {
+                    Debug.Log(request.error);
+                }
+                else // Success
+                {
+                    Debug.Log(request.downloadHandler.text);
+                }
             }
         }
     }

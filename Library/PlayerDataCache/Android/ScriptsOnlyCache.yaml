@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - DanielLochner.Assets.SimpleSideMenu.SimpleSideMenu
     - MainButtonScript
+    - changeNodo
+    - input
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -71,17 +73,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 12078}
+      Script: {instanceID: 11824}
     - Class: 114
-      Script: {instanceID: 12264}
+      Script: {instanceID: 12080}
     - Class: 114
-      Script: {instanceID: 12548}
+      Script: {instanceID: 12266}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 12892}
+      Script: {instanceID: 12642}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12856}
+    - Class: 114
+      Script: {instanceID: 12894}
+    - Class: 114
+      Script: {instanceID: 12958}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -223,7 +229,7 @@ ScriptsOnlyBuild:
     className: SimpleZoom
   - hash:
       serializedVersion: 2
-      Hash: 945723f06271af2212d10899bdf32681
+      Hash: dd610ac45b0fceb013af34735d77e114
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainButtonScript
@@ -299,6 +305,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: f9aa1a86a97bcfada9d1776c41267ccd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: changeNodo
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -548,4 +560,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/fredo/Desktop/ProyectoModular/TalkToLSM24.apk
+  playerPath: C:/Users/fredo/Desktop/ProyectoModular/TalkToLSM25.apk
